@@ -39,6 +39,14 @@
                                 <rect key="frame" x="144" y="260" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5i-i1-AGm">
+                                <rect key="frame" x="284" y="55" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Очистка сцены"/>
+                                <connections>
+                                    <action selector="clearSceneButtonPressed:" destination="ekI-MV-FmI" eventType="touchUpInside" id="GgD-j4-iDJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W2B-Ay-H6I"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -38,4 +38,7 @@ class ViewController: UIViewController {
         arView.scene.anchors.append(anchor)
     }
 
+    @IBAction func clearSceneButtonPressed(_ sender: UIButton) {
+        arView.scene.anchors.removeAll()
+    }
 }
