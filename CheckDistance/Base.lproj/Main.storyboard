@@ -16,33 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70F-nl-ojB">
-                                <rect key="frame" x="1" y="0.0" width="414" height="648"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70F-nl-ojB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="717"/>
                             </arView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfJ-8L-flV">
-                                <rect key="frame" x="20" y="708" width="374" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfJ-8L-flV">
+                                <rect key="frame" x="0.0" y="717" width="414" height="179"/>
                                 <state key="normal" title="Добавить сферу"/>
                                 <connections>
                                     <action selector="addSphereButtonPressed:" destination="ekI-MV-FmI" eventType="touchUpInside" id="6XS-Gh-gGK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="создание сферы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kt0-Nf-txr">
-                                <rect key="frame" x="141" y="656" width="133" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kisspng-reticle-clip-art-t-5ac32e4a02d112.4671149515227408100116" translatesAutoresizingMaskIntoConstraints="NO" id="8QP-Me-BwP">
-                                <rect key="frame" x="144" y="260" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-reticle-clip-art-t-5ac32e4a02d112.4671149515227408100116" translatesAutoresizingMaskIntoConstraints="NO" id="8QP-Me-BwP">
+                                <rect key="frame" x="-43" y="283.5" width="500" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8QP-Me-BwP" secondAttribute="height" multiplier="1:0.3" id="gRG-Ph-LEO"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5i-i1-AGm">
-                                <rect key="frame" x="284" y="55" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Очистка сцены"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5i-i1-AGm">
+                                <rect key="frame" x="294" y="64" width="110" height="30"/>
+                                <state key="normal" title="Очистка сцены">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
                                 <connections>
                                     <action selector="clearSceneButtonPressed:" destination="ekI-MV-FmI" eventType="touchUpInside" id="GgD-j4-iDJ"/>
                                 </connections>
@@ -50,6 +44,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W2B-Ay-H6I"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="70F-nl-ojB" firstAttribute="height" secondItem="zJk-VK-RcT" secondAttribute="height" multiplier="0.8" id="5MO-PO-g6e"/>
+                            <constraint firstItem="UfJ-8L-flV" firstAttribute="top" secondItem="70F-nl-ojB" secondAttribute="bottom" id="5PJ-DV-H5U"/>
+                            <constraint firstItem="W2B-Ay-H6I" firstAttribute="trailing" secondItem="r5i-i1-AGm" secondAttribute="trailing" constant="10" id="BYL-3Q-GBu"/>
+                            <constraint firstAttribute="bottom" secondItem="UfJ-8L-flV" secondAttribute="bottom" id="D4I-Yb-wRE"/>
+                            <constraint firstAttribute="trailing" secondItem="70F-nl-ojB" secondAttribute="trailing" id="JBb-VA-PfH"/>
+                            <constraint firstItem="UfJ-8L-flV" firstAttribute="leading" secondItem="W2B-Ay-H6I" secondAttribute="leading" id="NX5-8T-u8T"/>
+                            <constraint firstItem="8QP-Me-BwP" firstAttribute="centerY" secondItem="70F-nl-ojB" secondAttribute="centerY" id="X1t-9h-84x"/>
+                            <constraint firstItem="8QP-Me-BwP" firstAttribute="width" secondItem="70F-nl-ojB" secondAttribute="width" multiplier="1.20773" id="ZNx-bf-QoT"/>
+                            <constraint firstItem="70F-nl-ojB" firstAttribute="leading" secondItem="W2B-Ay-H6I" secondAttribute="leading" id="hnC-X6-bU9"/>
+                            <constraint firstItem="r5i-i1-AGm" firstAttribute="top" secondItem="W2B-Ay-H6I" secondAttribute="top" constant="20" id="iI9-bl-Dlf"/>
+                            <constraint firstItem="70F-nl-ojB" firstAttribute="top" secondItem="zJk-VK-RcT" secondAttribute="top" id="izr-ix-Cxb"/>
+                            <constraint firstItem="UfJ-8L-flV" firstAttribute="trailing" secondItem="W2B-Ay-H6I" secondAttribute="trailing" id="wgK-7S-Gch"/>
+                            <constraint firstItem="8QP-Me-BwP" firstAttribute="centerX" secondItem="70F-nl-ojB" secondAttribute="centerX" id="xUT-ND-fuI"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="arView" destination="70F-nl-ojB" id="8Um-BH-jtq"/>
@@ -64,6 +73,9 @@
         <image name="kisspng-reticle-clip-art-t-5ac32e4a02d112.4671149515227408100116" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
