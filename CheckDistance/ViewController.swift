@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
     @IBAction func addSphereButtonPressed(_ sender: UIButton) {
         
@@ -28,17 +27,23 @@ class ViewController: UIViewController {
         
         guard let x = hitTestResults.first?.worldTransform.columns.3.x,let y = hitTestResults.first?.worldTransform.columns.3.y, let z = hitTestResults.first?.worldTransform.columns.3.z  else {return}
         
-        let radius = 0.005
-
-        let entity = ModelEntity(mesh: .generateSphere(radius: Float(radius)))
+        let sphere = MeshResource.generateSphere(radius: 0.005)
+        let material = SimpleMaterial(color: .cyan, roughness: 0, isMetallic: true)
+        
+        let entity = ModelEntity(mesh: sphere, materials: [material])
 
         let anchor = AnchorEntity(world: [x, y, z])
         
         anchor.addChild(entity)
         arView.scene.anchors.append(anchor)
+        entity.generateCollisionShapes(recursive: true)
+        arView.installGestures([.all], for: entity)
+
+        
     }
 
     @IBAction func clearSceneButtonPressed(_ sender: UIButton) {
         arView.scene.anchors.removeAll()
     }
+    
 }

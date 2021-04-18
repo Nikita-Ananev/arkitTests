@@ -8,14 +8,18 @@ provides-member:
 provides-dynamic-lookup:
 - "addSphereButtonPressed"
 - "arView"
+- "clearSceneButtonPressed"
 - "viewDidLoad"
 depends-top-level:
 - "ARView"
 - !private "AnchorEntity"
 - !private "Array"
-- !private "Float"
+- !private "BooleanLiteralType"
 - !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "MeshResource"
 - !private "ModelEntity"
+- !private "SimpleMaterial"
 - "UIButton"
 - "UIViewController"
 - "ViewController"
@@ -28,44 +32,47 @@ depends-member:
 - !private ["10RealityKit6ARViewC", "center"]
 - !private ["10RealityKit6ARViewC", "hitTest"]
 - !private ["10RealityKit6ARViewC", "scene"]
-- !private ["s18AdditiveArithmeticP", ""]
-- !private ["s18AdditiveArithmeticP", "init"]
 - !private ["10RealityKit5SceneC16AnchorCollectionV", "append"]
+- !private ["10RealityKit5SceneC16AnchorCollectionV", "removeAll"]
 - !private ["10RealityKit12AnchorEntityC", "addChild"]
 - !private ["10RealityKit12AnchorEntityC", "init"]
 - !private ["Sa", "first"]
 - ["SK", ""]
 - !private ["SK", "first"]
-- !private ["SB", "init"]
 - !private ["So15CALayerDelegateP", "center"]
 - !private ["So15CALayerDelegateP", "hitTest"]
 - !private ["So15CALayerDelegateP", "scene"]
 - !private ["s7CVarArgP", "AnchorEntity"]
-- !private ["s7CVarArgP", "Float"]
+- !private ["s7CVarArgP", "MeshResource"]
 - !private ["s7CVarArgP", "ModelEntity"]
+- !private ["s7CVarArgP", "SimpleMaterial"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "arView"]
 - !private ["s7CVarArgP", "center"]
+- !private ["s7CVarArgP", "clearSceneButtonPressed"]
+- !private ["s7CVarArgP", "cyan"]
 - !private ["s7CVarArgP", "first"]
 - !private ["s7CVarArgP", "hitTest"]
-- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "scene"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "worldTransform"]
 - ["Sl", ""]
 - !private ["Sl", "append"]
 - !private ["Sl", "first"]
+- !private ["Sl", "removeAll"]
 - ["SL", ""]
-- !private ["SL", "init"]
 - !private ["10Foundation15ContiguousBytesP", "first"]
 - !private ["s28CustomDebugStringConvertibleP", "AnchorEntity"]
-- !private ["s28CustomDebugStringConvertibleP", "Float"]
+- !private ["s28CustomDebugStringConvertibleP", "MeshResource"]
 - !private ["s28CustomDebugStringConvertibleP", "ModelEntity"]
+- !private ["s28CustomDebugStringConvertibleP", "SimpleMaterial"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addChild"]
 - !private ["s28CustomDebugStringConvertibleP", "arView"]
 - !private ["s28CustomDebugStringConvertibleP", "center"]
+- !private ["s28CustomDebugStringConvertibleP", "clearSceneButtonPressed"]
 - !private ["s28CustomDebugStringConvertibleP", "columns"]
+- !private ["s28CustomDebugStringConvertibleP", "cyan"]
 - !private ["s28CustomDebugStringConvertibleP", "first"]
 - !private ["s28CustomDebugStringConvertibleP", "hitTest"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -78,18 +85,20 @@ depends-member:
 - !private ["s17CustomReflectableP", "center"]
 - !private ["s17CustomReflectableP", "first"]
 - !private ["s17CustomReflectableP", "hitTest"]
-- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "scene"]
 - !private ["s23CustomStringConvertibleP", "AnchorEntity"]
-- !private ["s23CustomStringConvertibleP", "Float"]
+- !private ["s23CustomStringConvertibleP", "MeshResource"]
 - !private ["s23CustomStringConvertibleP", "ModelEntity"]
+- !private ["s23CustomStringConvertibleP", "SimpleMaterial"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "arView"]
 - !private ["s23CustomStringConvertibleP", "center"]
+- !private ["s23CustomStringConvertibleP", "clearSceneButtonPressed"]
+- !private ["s23CustomStringConvertibleP", "cyan"]
 - !private ["s23CustomStringConvertibleP", "first"]
 - !private ["s23CustomStringConvertibleP", "hitTest"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
 - !private ["s23CustomStringConvertibleP", "scene"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "worldTransform"]
@@ -102,7 +111,6 @@ depends-member:
 - !private ["Se", "center"]
 - !private ["Se", "first"]
 - !private ["Se", "hitTest"]
-- !private ["Se", "init"]
 - !private ["Se", "scene"]
 - !private ["Se", "x"]
 - !private ["Se", "y"]
@@ -111,7 +119,6 @@ depends-member:
 - !private ["SE", "center"]
 - !private ["SE", "first"]
 - !private ["SE", "hitTest"]
-- !private ["SE", "init"]
 - !private ["SE", "scene"]
 - !private ["SE", "x"]
 - !private ["SE", "y"]
@@ -120,14 +127,17 @@ depends-member:
 - !private ["10RealityKit6EntityC", "addChild"]
 - !private ["10RealityKit6EntityC", "init"]
 - !private ["SQ", "AnchorEntity"]
-- !private ["SQ", "Float"]
+- !private ["SQ", "MeshResource"]
 - !private ["SQ", "ModelEntity"]
+- !private ["SQ", "SimpleMaterial"]
 - ["SQ", ""]
 - !private ["SQ", "addChild"]
 - !private ["SQ", "anchors"]
 - !private ["SQ", "arView"]
 - !private ["SQ", "center"]
+- !private ["SQ", "clearSceneButtonPressed"]
 - !private ["SQ", "columns"]
+- !private ["SQ", "cyan"]
 - !private ["SQ", "featurePoint"]
 - !private ["SQ", "first"]
 - !private ["SQ", "hitTest"]
@@ -149,9 +159,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "y"]
 - !private ["s25ExpressibleByArrayLiteralP", "z"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
-- !private ["s25ExpressibleByFloatLiteralP", ""]
-- !private ["s25ExpressibleByFloatLiteralP", "init"]
-- !private ["s27ExpressibleByIntegerLiteralP", ""]
+- !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "center"]
 - !private ["s23ExpressibleByNilLiteralP", "hitTest"]
@@ -159,9 +167,6 @@ depends-member:
 - ["s32ExpressibleByStringInterpolationP", ""]
 - ["s26ExpressibleByStringLiteralP", ""]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
-- !private ["Sf", "init"]
-- !private ["SF", ""]
-- !private ["SF", "init"]
 - !private ["10RealityKit12HasAnchoringP", "addChild"]
 - !private ["10RealityKit12HasAnchoringP", "init"]
 - !private ["10RealityKit12HasCollisionP", ""]
@@ -180,13 +185,16 @@ depends-member:
 - !private ["10RealityKit12HasTransformP", "addChild"]
 - !private ["10RealityKit12HasTransformP", "init"]
 - !private ["SH", "AnchorEntity"]
-- !private ["SH", "Float"]
+- !private ["SH", "MeshResource"]
 - !private ["SH", "ModelEntity"]
+- !private ["SH", "SimpleMaterial"]
 - ["SH", ""]
 - !private ["SH", "addChild"]
 - !private ["SH", "anchors"]
 - !private ["SH", "arView"]
 - !private ["SH", "center"]
+- !private ["SH", "clearSceneButtonPressed"]
+- !private ["SH", "cyan"]
 - !private ["SH", "first"]
 - !private ["SH", "hitTest"]
 - !private ["SH", "init"]
@@ -200,7 +208,7 @@ depends-member:
 - !private ["s12IdentifiableP", "anchors"]
 - !private ["s12IdentifiableP", "init"]
 - ["s25LosslessStringConvertibleP", ""]
-- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["10RealityKit8MaterialP", "init"]
 - !private ["10RealityKit12MeshResourceC", "generateSphere"]
 - !private ["10RealityKit11ModelEntityC", "init"]
 - !private ["SM", ""]
@@ -208,37 +216,48 @@ depends-member:
 - !private ["10Foundation19MutableDataProtocolP", "first"]
 - ["So8NSCodingP", "ARView"]
 - !private ["So8NSCodingP", "AnchorEntity"]
-- !private ["So8NSCodingP", "Float"]
+- !private ["So8NSCodingP", "MeshResource"]
 - !private ["So8NSCodingP", "ModelEntity"]
+- !private ["So8NSCodingP", "SimpleMaterial"]
 - ["So8NSCodingP", "UIButton"]
 - ["So8NSCodingP", ""]
 - ["So8NSCodingP", "addSphereButtonPressed"]
 - ["So8NSCodingP", "arView"]
 - !private ["So8NSCodingP", "center"]
+- ["So8NSCodingP", "clearSceneButtonPressed"]
+- !private ["So8NSCodingP", "cyan"]
 - !private ["So8NSCodingP", "hitTest"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "scene"]
 - ["So8NSCodingP", "viewDidLoad"]
 - !private ["So9NSCopyingP", ""]
+- !private ["So9NSCopyingP", "cyan"]
 - ["So26NSExtensionRequestHandlingP", "ARView"]
 - !private ["So26NSExtensionRequestHandlingP", "AnchorEntity"]
-- !private ["So26NSExtensionRequestHandlingP", "Float"]
+- !private ["So26NSExtensionRequestHandlingP", "MeshResource"]
 - !private ["So26NSExtensionRequestHandlingP", "ModelEntity"]
+- !private ["So26NSExtensionRequestHandlingP", "SimpleMaterial"]
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - ["So26NSExtensionRequestHandlingP", "addSphereButtonPressed"]
 - ["So26NSExtensionRequestHandlingP", "arView"]
+- ["So26NSExtensionRequestHandlingP", "clearSceneButtonPressed"]
 - ["So26NSExtensionRequestHandlingP", "init"]
 - ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So21NSItemProviderReadingP", "cyan"]
+- !private ["So21NSItemProviderWritingP", "cyan"]
 - ["So8NSObjectC", "ARView"]
 - !private ["So8NSObjectC", "AnchorEntity"]
-- !private ["So8NSObjectC", "Float"]
+- !private ["So8NSObjectC", "MeshResource"]
 - !private ["So8NSObjectC", "ModelEntity"]
+- !private ["So8NSObjectC", "SimpleMaterial"]
 - ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", ""]
 - ["So8NSObjectC", "addSphereButtonPressed"]
 - ["So8NSObjectC", "arView"]
 - !private ["So8NSObjectC", "center"]
+- ["So8NSObjectC", "clearSceneButtonPressed"]
+- !private ["So8NSObjectC", "cyan"]
 - !private ["So8NSObjectC", "hitTest"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "scene"]
@@ -246,20 +265,22 @@ depends-member:
 - !private ["So8NSObjectC", "worldTransform"]
 - ["So8NSObjectP", "ARView"]
 - !private ["So8NSObjectP", "AnchorEntity"]
-- !private ["So8NSObjectP", "Float"]
+- !private ["So8NSObjectP", "MeshResource"]
 - !private ["So8NSObjectP", "ModelEntity"]
+- !private ["So8NSObjectP", "SimpleMaterial"]
 - ["So8NSObjectP", "UIButton"]
 - ["So8NSObjectP", ""]
 - ["So8NSObjectP", "addSphereButtonPressed"]
 - ["So8NSObjectP", "arView"]
 - !private ["So8NSObjectP", "center"]
+- ["So8NSObjectP", "clearSceneButtonPressed"]
+- !private ["So8NSObjectP", "cyan"]
 - !private ["So8NSObjectP", "hitTest"]
 - ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "scene"]
 - ["So8NSObjectP", "viewDidLoad"]
 - !private ["So8NSObjectP", "worldTransform"]
-- !private ["Sj", ""]
-- !private ["Sj", "init"]
+- !private ["So14NSSecureCodingP", "cyan"]
 - !private ["s9OptionSetP", "featurePoint"]
 - !private ["Sq", "center"]
 - !private ["Sq", "hitTest"]
@@ -278,7 +299,6 @@ depends-member:
 - !private ["s5SIMD4V", "x"]
 - !private ["s5SIMD4V", "y"]
 - !private ["s5SIMD4V", "z"]
-- !private ["s10SIMDScalarP", "init"]
 - !private ["s11SIMDStorageP", ""]
 - !private ["s11SIMDStorageP", "x"]
 - !private ["s11SIMDStorageP", "y"]
@@ -287,15 +307,12 @@ depends-member:
 - ["ST", ""]
 - !private ["ST", "append"]
 - !private ["ST", "first"]
+- !private ["ST", "removeAll"]
 - !private ["s10SetAlgebraP", ""]
 - !private ["s10SetAlgebraP", "featurePoint"]
-- !private ["s13SignedNumericP", ""]
-- !private ["s13SignedNumericP", "init"]
-- !private ["Sx", ""]
-- !private ["Sx", "init"]
+- !private ["10RealityKit14SimpleMaterialV", "init"]
 - ["s16TextOutputStreamP", ""]
 - ["s20TextOutputStreamableP", ""]
-- !private ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "center"]
 - !private ["So29UIAccessibilityIdentificationP", "hitTest"]
 - !private ["So29UIAccessibilityIdentificationP", "scene"]
@@ -304,25 +321,30 @@ depends-member:
 - !private ["So12UIAppearanceP", "scene"]
 - ["So21UIAppearanceContainerP", "ARView"]
 - !private ["So21UIAppearanceContainerP", "AnchorEntity"]
-- !private ["So21UIAppearanceContainerP", "Float"]
+- !private ["So21UIAppearanceContainerP", "MeshResource"]
 - !private ["So21UIAppearanceContainerP", "ModelEntity"]
+- !private ["So21UIAppearanceContainerP", "SimpleMaterial"]
 - ["So21UIAppearanceContainerP", "UIButton"]
 - ["So21UIAppearanceContainerP", ""]
 - ["So21UIAppearanceContainerP", "addSphereButtonPressed"]
 - ["So21UIAppearanceContainerP", "arView"]
 - !private ["So21UIAppearanceContainerP", "center"]
+- ["So21UIAppearanceContainerP", "clearSceneButtonPressed"]
 - !private ["So21UIAppearanceContainerP", "hitTest"]
 - ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "scene"]
 - ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So7UIColorC", "cyan"]
 - ["So18UIContentContainerP", "ARView"]
 - !private ["So18UIContentContainerP", "AnchorEntity"]
-- !private ["So18UIContentContainerP", "Float"]
+- !private ["So18UIContentContainerP", "MeshResource"]
 - !private ["So18UIContentContainerP", "ModelEntity"]
+- !private ["So18UIContentContainerP", "SimpleMaterial"]
 - ["So18UIContentContainerP", "UIButton"]
 - ["So18UIContentContainerP", ""]
 - ["So18UIContentContainerP", "addSphereButtonPressed"]
 - ["So18UIContentContainerP", "arView"]
+- ["So18UIContentContainerP", "clearSceneButtonPressed"]
 - ["So18UIContentContainerP", "init"]
 - ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So17UICoordinateSpaceP", "center"]
@@ -333,13 +355,15 @@ depends-member:
 - !private ["So13UIDynamicItemP", "scene"]
 - ["So18UIFocusEnvironmentP", "ARView"]
 - !private ["So18UIFocusEnvironmentP", "AnchorEntity"]
-- !private ["So18UIFocusEnvironmentP", "Float"]
+- !private ["So18UIFocusEnvironmentP", "MeshResource"]
 - !private ["So18UIFocusEnvironmentP", "ModelEntity"]
+- !private ["So18UIFocusEnvironmentP", "SimpleMaterial"]
 - ["So18UIFocusEnvironmentP", "UIButton"]
 - ["So18UIFocusEnvironmentP", ""]
 - ["So18UIFocusEnvironmentP", "addSphereButtonPressed"]
 - ["So18UIFocusEnvironmentP", "arView"]
 - !private ["So18UIFocusEnvironmentP", "center"]
+- ["So18UIFocusEnvironmentP", "clearSceneButtonPressed"]
 - !private ["So18UIFocusEnvironmentP", "hitTest"]
 - ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "scene"]
@@ -358,75 +382,87 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "scene"]
 - ["So30UIPasteConfigurationSupportingP", "ARView"]
 - !private ["So30UIPasteConfigurationSupportingP", "AnchorEntity"]
-- !private ["So30UIPasteConfigurationSupportingP", "Float"]
+- !private ["So30UIPasteConfigurationSupportingP", "MeshResource"]
 - !private ["So30UIPasteConfigurationSupportingP", "ModelEntity"]
+- !private ["So30UIPasteConfigurationSupportingP", "SimpleMaterial"]
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "addSphereButtonPressed"]
 - ["So30UIPasteConfigurationSupportingP", "arView"]
 - !private ["So30UIPasteConfigurationSupportingP", "center"]
+- ["So30UIPasteConfigurationSupportingP", "clearSceneButtonPressed"]
 - !private ["So30UIPasteConfigurationSupportingP", "hitTest"]
 - ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "scene"]
 - ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "ARView"]
 - !private ["So11UIResponderC", "AnchorEntity"]
-- !private ["So11UIResponderC", "Float"]
+- !private ["So11UIResponderC", "MeshResource"]
 - !private ["So11UIResponderC", "ModelEntity"]
+- !private ["So11UIResponderC", "SimpleMaterial"]
 - ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", ""]
 - ["So11UIResponderC", "addSphereButtonPressed"]
 - ["So11UIResponderC", "arView"]
 - !private ["So11UIResponderC", "center"]
+- ["So11UIResponderC", "clearSceneButtonPressed"]
 - !private ["So11UIResponderC", "hitTest"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "scene"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "ARView"]
 - !private ["So30UIResponderStandardEditActionsP", "AnchorEntity"]
-- !private ["So30UIResponderStandardEditActionsP", "Float"]
+- !private ["So30UIResponderStandardEditActionsP", "MeshResource"]
 - !private ["So30UIResponderStandardEditActionsP", "ModelEntity"]
+- !private ["So30UIResponderStandardEditActionsP", "SimpleMaterial"]
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "addSphereButtonPressed"]
 - ["So30UIResponderStandardEditActionsP", "arView"]
 - !private ["So30UIResponderStandardEditActionsP", "center"]
+- ["So30UIResponderStandardEditActionsP", "clearSceneButtonPressed"]
 - !private ["So30UIResponderStandardEditActionsP", "hitTest"]
 - ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "scene"]
 - ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "ARView"]
 - !private ["So16UIStateRestoringP", "AnchorEntity"]
-- !private ["So16UIStateRestoringP", "Float"]
+- !private ["So16UIStateRestoringP", "MeshResource"]
 - !private ["So16UIStateRestoringP", "ModelEntity"]
+- !private ["So16UIStateRestoringP", "SimpleMaterial"]
 - ["So16UIStateRestoringP", "UIButton"]
 - ["So16UIStateRestoringP", ""]
 - ["So16UIStateRestoringP", "addSphereButtonPressed"]
 - ["So16UIStateRestoringP", "arView"]
+- ["So16UIStateRestoringP", "clearSceneButtonPressed"]
 - ["So16UIStateRestoringP", "init"]
 - ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "ARView"]
 - !private ["So18UITraitEnvironmentP", "AnchorEntity"]
-- !private ["So18UITraitEnvironmentP", "Float"]
+- !private ["So18UITraitEnvironmentP", "MeshResource"]
 - !private ["So18UITraitEnvironmentP", "ModelEntity"]
+- !private ["So18UITraitEnvironmentP", "SimpleMaterial"]
 - ["So18UITraitEnvironmentP", "UIButton"]
 - ["So18UITraitEnvironmentP", ""]
 - ["So18UITraitEnvironmentP", "addSphereButtonPressed"]
 - ["So18UITraitEnvironmentP", "arView"]
 - !private ["So18UITraitEnvironmentP", "center"]
+- ["So18UITraitEnvironmentP", "clearSceneButtonPressed"]
 - !private ["So18UITraitEnvironmentP", "hitTest"]
 - ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "scene"]
 - ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So23UIUserActivityRestoringP", "ARView"]
 - !private ["So23UIUserActivityRestoringP", "AnchorEntity"]
-- !private ["So23UIUserActivityRestoringP", "Float"]
+- !private ["So23UIUserActivityRestoringP", "MeshResource"]
 - !private ["So23UIUserActivityRestoringP", "ModelEntity"]
+- !private ["So23UIUserActivityRestoringP", "SimpleMaterial"]
 - ["So23UIUserActivityRestoringP", "UIButton"]
 - ["So23UIUserActivityRestoringP", ""]
 - ["So23UIUserActivityRestoringP", "addSphereButtonPressed"]
 - ["So23UIUserActivityRestoringP", "arView"]
 - !private ["So23UIUserActivityRestoringP", "center"]
+- ["So23UIUserActivityRestoringP", "clearSceneButtonPressed"]
 - !private ["So23UIUserActivityRestoringP", "hitTest"]
 - ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "scene"]
@@ -437,53 +473,61 @@ depends-member:
 - !private ["So6UIViewC", "scene"]
 - ["So16UIViewControllerC", "ARView"]
 - !private ["So16UIViewControllerC", "AnchorEntity"]
-- !private ["So16UIViewControllerC", "Float"]
+- !private ["So16UIViewControllerC", "MeshResource"]
 - !private ["So16UIViewControllerC", "ModelEntity"]
+- !private ["So16UIViewControllerC", "SimpleMaterial"]
 - ["So16UIViewControllerC", "UIButton"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "addSphereButtonPressed"]
 - ["So16UIViewControllerC", "arView"]
+- ["So16UIViewControllerC", "clearSceneButtonPressed"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["13CheckDistance14ViewControllerC", "ARView"]
 - !private ["13CheckDistance14ViewControllerC", "AnchorEntity"]
-- !private ["13CheckDistance14ViewControllerC", "Float"]
+- !private ["13CheckDistance14ViewControllerC", "MeshResource"]
 - !private ["13CheckDistance14ViewControllerC", "ModelEntity"]
+- !private ["13CheckDistance14ViewControllerC", "SimpleMaterial"]
 - ["13CheckDistance14ViewControllerC", "UIButton"]
 - ["13CheckDistance14ViewControllerC", ""]
 - ["13CheckDistance14ViewControllerC", "addSphereButtonPressed"]
 - ["13CheckDistance14ViewControllerC", "arView"]
+- ["13CheckDistance14ViewControllerC", "clearSceneButtonPressed"]
 - ["13CheckDistance14ViewControllerC", "deinit"]
 - ["13CheckDistance14ViewControllerC", "init"]
 - ["13CheckDistance14ViewControllerC", "viewDidLoad"]
 - !private ["s14_ArrayProtocolP", "first"]
-- !private ["s15_CVarArgAlignedP", "init"]
-- !private ["s22_CVarArgPassedAsDoubleP", "init"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s26_ExpressibleByColorLiteralP", "cyan"]
 - !private ["s19_HasContiguousBytesP", "first"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AnchorEntity"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "Float"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MeshResource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ModelEntity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SimpleMaterial"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "arView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "center"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "clearSceneButtonPressed"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cyan"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hitTest"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scene"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "worldTransform"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AnchorEntity"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Float"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MeshResource"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ModelEntity"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SimpleMaterial"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "arView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "center"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "clearSceneButtonPressed"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cyan"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "hitTest"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scene"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
@@ -491,7 +535,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "center"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "hitTest"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "scene"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "center"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "hitTest"]
@@ -501,12 +544,10 @@ depends-nominal:
 - !private "So15ARHitTestResultC"
 - !private "So18ARSessionProvidingP"
 - !private "10RealityKit6ARViewC"
-- !private "s18AdditiveArithmeticP"
 - !private "10RealityKit5SceneC16AnchorCollectionV"
 - !private "10RealityKit12AnchorEntityC"
 - !private "Sa"
 - "SK"
-- !private "SB"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - "Sl"
@@ -523,14 +564,11 @@ depends-nominal:
 - !private "10RealityKit11EventSourceP"
 - !private "s25ExpressibleByArrayLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "Sf"
-- !private "SF"
 - !private "10RealityKit12HasAnchoringP"
 - !private "10RealityKit12HasCollisionP"
 - !private "10RealityKit12HasHierarchyP"
@@ -543,6 +581,7 @@ depends-nominal:
 - "SH"
 - !private "s12IdentifiableP"
 - "s25LosslessStringConvertibleP"
+- !private "10RealityKit8MaterialP"
 - !private "10RealityKit12MeshResourceC"
 - !private "10RealityKit11ModelEntityC"
 - !private "SM"
@@ -550,9 +589,11 @@ depends-nominal:
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
-- !private "Sj"
+- !private "So14NSSecureCodingP"
 - !private "s9OptionSetP"
 - !private "Sq"
 - !private "Sk"
@@ -562,18 +603,17 @@ depends-nominal:
 - !private "So19ARHitTestResultTypeV"
 - !private "s4SIMDP"
 - !private "s5SIMD4V"
-- !private "s10SIMDScalarP"
 - !private "s11SIMDStorageP"
 - !private "10RealityKit5SceneC"
 - "ST"
 - !private "s10SetAlgebraP"
-- !private "s13SignedNumericP"
-- !private "Sx"
+- !private "10RealityKit14SimpleMaterialV"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So17UICoordinateSpaceP"
 - !private "So13UIDynamicItemP"
@@ -592,14 +632,13 @@ depends-nominal:
 - "So16UIViewControllerC"
 - "13CheckDistance14ViewControllerC"
 - !private "s14_ArrayProtocolP"
-- !private "s15_CVarArgAlignedP"
-- !private "s22_CVarArgPassedAsDoubleP"
-- !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -669,4 +708,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
-interface-hash: "6462aaaccb6a76019ec02d6a248f5af5"
+interface-hash: "2cc50581eac6e6c2ebc6104ce8bb9aa9"
