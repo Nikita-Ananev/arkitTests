@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
 options: "6f78b91a70f3dc8e0eec7006db61551d"
-build_time: [1618787321, 769003000]
+build_time: [1618792285, 750432000]
 inputs:
-  "/Users/ananev/github/arkitTests/arkitTests/CheckDistance/ViewController.swift": [1618787315, 43485454]
+  "/Users/ananev/github/arkitTests/arkitTests/CheckDistance/ViewController.swift": [1618792285, 598902270]
   "/Users/ananev/github/arkitTests/arkitTests/CheckDistance/AppDelegate.swift": [1618764821, 306935570]
   "/Users/ananev/github/arkitTests/arkitTests/build/CheckDistance.build/Debug-iphoneos/CheckDistance.build/DerivedSources/RCProjectGenerated/Experience/Experience.swift": [1618785926, 645342786]

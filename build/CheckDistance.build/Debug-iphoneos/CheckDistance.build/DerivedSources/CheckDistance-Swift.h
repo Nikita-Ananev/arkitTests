@@ -221,6 +221,7 @@ SWIFT_CLASS("_TtC13CheckDistance11AppDelegate")
 @end
 
 @class ARView;
+@class UILabel;
 @class UIButton;
 @class NSBundle;
 @class NSCoder;
@@ -228,6 +229,7 @@ SWIFT_CLASS("_TtC13CheckDistance11AppDelegate")
 SWIFT_CLASS("_TtC13CheckDistance14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, strong) IBOutlet ARView * _Null_unspecified arView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified label;
 - (void)viewDidLoad;
 - (IBAction)addSphereButtonPressed:(UIButton * _Nonnull)sender;
 - (IBAction)clearSceneButtonPressed:(UIButton * _Nonnull)sender;
